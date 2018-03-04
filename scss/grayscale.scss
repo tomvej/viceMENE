@@ -294,3 +294,20 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+dt {
+  display: inline;
+
+  &:after {
+    content: ':';
+  }
+}
+
+dd {
+  display: inline;
+  &:after {
+    content: '\A';
+    display: inline;
+    white-space: pre;
+  }
+}
