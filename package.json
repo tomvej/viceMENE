@@ -13,7 +13,8 @@
     ],
     "homepage": "https://startbootstrap.com/template-overviews/grayscale",
     "scripts": {
-        "start": "gulp dev"
+        "start": "gulp dev",
+        "build": "gulp"
     },
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale/issues",

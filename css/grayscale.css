@@ -68,6 +68,7 @@ a:focus, a:hover {
 
 #mainNav .navbar-brand {
   font-weight: 700;
+  text-transform: none;
 }
 
 #mainNav a {
