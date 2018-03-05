@@ -6,6 +6,7 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
+var zip = require('gulp-zip');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -96,7 +97,17 @@ gulp.task('js:minify', function() {
 gulp.task('js', ['js:minify']);
 
 // Default task
-gulp.task('default', ['css', 'js', 'vendor']);
+gulp.task('default', ['css', 'js', 'vendor'], function() {
+    gulp.src([
+        './js/**',
+        './css/**',
+        './img/**',
+        './vendor/**',
+        'index.html'
+    ], {base: '.'})
+    .pipe(zip('víceMÉNĚ.zip'))
+    .pipe(gulp.dest('.'))
+});
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
