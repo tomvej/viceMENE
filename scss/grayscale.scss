@@ -1,3 +1,9 @@
+/*
+  TODO
+  1) šedá na navbar
+  2) světlejší text-muted
+  3) světlejší podbarvení aktivních navbaritem
+ */
 @import 'variables.scss';
 @import 'mixins.scss';
 body {
@@ -9,7 +15,7 @@ body {
   height: 100%;
 
   color: white;
-  background-color: black;
+  background-color: #222222;
 }
 
 html {
