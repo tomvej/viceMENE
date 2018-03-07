@@ -1,9 +1,3 @@
-/*
-  TODO
-  1) šedá na navbar
-  2) světlejší text-muted
-  3) světlejší podbarvení aktivních navbaritem
- */
 @import 'variables.scss';
 @import 'mixins.scss';
 body {
@@ -126,7 +120,7 @@ a {
     }
     .nav-link.active {
       outline: none;
-      background-color: rgba(white, .4);
+      background-color: $navbar-active-color;
       &:hover {
         color: white;
       }
@@ -299,4 +293,8 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.text-muted {
+  color: $text-muted-color !important;
 }
